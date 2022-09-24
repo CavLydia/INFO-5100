@@ -378,17 +378,6 @@ public class ViewJPanel extends javax.swing.JPanel {
         jTDegree2.setText(userProfile.getDegree2());
         jTD2Start.setText(userProfile.getDegree2Start());
         jTD2End.setText(userProfile.getDegree2End());
-//        jTphoto.se
-        
-//        BufferedImage bi; // bi is the object of the class BufferedImage 
-//        // Now you use try and catch `enter code here` 
-//
-//        try{ 
-//        bi = ImageIO.read(path); // path is your file or image path 
-//        jlabel.setIcon(new ImageIcon(bi)); 
-//        }catch(IOException e){ 
-//        
-//        } 
 
         ImageIcon imi = new ImageIcon(new ImageIcon(userProfile.getPhotoUrl()).getImage().getScaledInstance(200, 100, Image.SCALE_SMOOTH));
         jTphoto.setIcon(imi);
